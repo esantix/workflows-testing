@@ -15,5 +15,5 @@ jobs:
     uses: esantix/workflows/.github/workflows/python_unittest.yml@main
     with:
       pythonpath: python/src
-      testpath: python/src/tests
+      testspath: python/src/tests
       requirements: python/requirements.txt
