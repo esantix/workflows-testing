@@ -4,4 +4,5 @@
 .PHONY: quickpush
 
 quickpush:
-	git add -A; git commit -m "Updates"; git push
+	date
+	git add -A; git commit -m "$$(date '+%Y-%m-%d %H:%M:%S')"; git push
