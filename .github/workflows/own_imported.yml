@@ -16,4 +16,4 @@ jobs:
     with:
       pythonpath: python/src
       testspath: python/src/tests
-      requirements: python/requirements.txt
+      requirements: -r python/requirements.txt
