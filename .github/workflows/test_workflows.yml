@@ -1,4 +1,4 @@
-name: Python Workflows
+name: Test esantix/workflows
 
 on:
   push:
@@ -6,14 +6,21 @@ on:
       - main
 
 jobs:
-  flake8:
+  python_flake8:
     uses: esantix/workflows/.github/workflows/python_flake8.yml@main
     with:
         ignore-codes: E501,E502
 
-  test:
+  python_unittest:
     uses: esantix/workflows/.github/workflows/python_unittest.yml@main
     with:
       pythonpath: python/src
       testspath: python/src/tests
       requirements: -r python/requirements.txt
+
+  terraform_test:
+    uses: esantix/workflows/.github/workflows/terraform_test.yml@main
+    with:
+      terraform-wdir: ./terraform
+    
+    
