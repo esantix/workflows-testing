@@ -1,7 +1,7 @@
 
-.DEFAULT_GOAL = push
+.DEFAULT_GOAL = quickpush
 
-.PHONY: push
+.PHONY: quickpush
 
-push:
+quickpush:
 	git add -A; git commit -m "Updates"; git push
