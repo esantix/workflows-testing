@@ -7,12 +7,12 @@ on:
 
 jobs:
   flake8:
-    uses: esantix/workflows/workflows/python_flake8.yml@main
+    uses: esantix/workflows/.github/workflows/python_flake8.yml@main
     with:
         ignore-codes: E501,E502
 
   test:
-    uses: esantix/workflows/workflows/python_unittest.yml@main
+    uses: esantix/workflows/.github/workflows/python_unittest.yml@main
     with:
       pythonpath: python/src
       testpath: python/src/tests
