@@ -1,0 +1,13 @@
+name: Code quality
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  flake8:
+    uses: esantix/workflows/.github/workflows/flake8.yml@main
+    with:
+        ignore-codes: E501,E502
+
