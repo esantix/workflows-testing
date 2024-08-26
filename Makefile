@@ -4,4 +4,4 @@
 .PHONY: push
 
 push:
-	git add -A; git commit -m "Updates"; git push
+	git add -A; git commit -m "Updatedsfsds"; git push
