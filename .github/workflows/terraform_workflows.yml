@@ -1,0 +1,13 @@
+name: Terraform Workflows
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  flake8:
+    uses: esantix/workflows/.github/workflows/terraform_flake8.yml@main
+    with:
+      terraform-wdir: ./terraform
+
