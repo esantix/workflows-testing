@@ -11,3 +11,9 @@ jobs:
     with:
         ignore-codes: E501,E502
 
+  test:
+    uses: esantix/workflows/workflows/python_unittest.yml@main
+    with:
+      pythonpath: python/src
+      testpath: python/src/tests
+      requirements: python/requirements.txt
