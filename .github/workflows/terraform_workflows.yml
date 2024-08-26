@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  flake8:
-    uses: esantix/workflows/.github/workflows/terraform_flake8.yml@main
+  test:
+    uses: esantix/workflows/.github/workflows/terraform_test.yml@main
     with:
       terraform-wdir: ./terraform
 
